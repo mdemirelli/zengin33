@@ -1,0 +1,272 @@
+:root {
+    --color1: #ebb211;
+    --color2: #04d5fa;
+    --color3: #7c8494;
+    --color4: rgb(206, 20, 101);
+  }
+  .views,
+  .gallery,
+  .appointment-form {
+    margin-bottom: 100px;
+  }
+  /* TOPBAR */
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--color1);
+  }
+  .topbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
+  .topbar i {
+    color: var(--color2);
+  }
+  .topbar .social-links i {
+    font-size: 2rem;
+  }
+  .topbar .contact-info i {
+    font-size: 2rem;
+  }
+  /* NAVBAR */
+  /* .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  } */
+  .navbar {
+    font-size: 1.3rem;
+  }
+  .navbar ul a {
+    border-radius: 2rem;
+    padding: 5px 10px;
+  }
+  .navbar ul a:hover {
+    background-color: var(--color1);
+  }
+  /*
+  @media (max-width: 570px) {
+    .navbar-brand img {
+      width: 250px;
+    }
+  }
+  */
+  /* CAROUSEL */
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 8rem;
+    right: auto;
+    text-align: left;
+    transform: translateY(-50%);
+    bottom: auto;
+    width: 40%;
+  /*box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;*/
+  }
+  /*
+  .carousel-control-prev,
+  .carousel-control-next {
+    align-items: flex-end;
+    padding-bottom: 2rem;
+  }
+  .carousel-control-prev {
+    right: 3rem;
+    left: auto;
+  }
+  */
+  .carousel-caption h5 {
+    font-size: 2.5rem;
+    border-left: 1rem solid var(--color4);
+    padding-left: 0.5rem;
+    margin-bottom: 0;
+  }
+  .carousel-caption p {
+    font-size: 2rem;
+  }
+  /* WHY-US */
+  .why-us {
+    position: relative;
+    top: -10px;
+     z-index: 2;
+    text-align: center;
+    
+  }
+  .why-us i {
+    font-size: 3rem;
+    color: var(--color4);
+    padding: 1rem 0;
+  }
+  /*
+  .why-us div[class^="col"]:first-child .card {
+    
+  }*/
+ 
+  .why-us .card-body:hover {
+    background-color: bisque;
+    /* background-color: var(--color3);*/
+  }
+  .why-us p{
+    font-size: 1.4rem;
+  }
+  /* VIEWS */
+  .views {
+    text-align: center;
+    width: 90%;
+  }
+  .views i {
+    font-size: 3rem;
+    color: var(--color2);
+  }
+  .views h3 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--color1);
+  }
+  /* GALLERY */
+  .gallery img {
+    border-radius: 1rem;
+    transition: transform 0.5s;
+  }
+  .gallery img:hover {
+    transform: scale(1.1);
+  }
+  .gallery div[class^="col"] {
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+
+  /* APPOINTMENT FORM */
+  .appointment-form {
+    background-color: var(--color3);
+    padding: 3rem;
+  }
+  .appointment-form h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  /* FOOTER */
+  footer {
+    margin-top: 10px;
+    background-color: var(--color1);
+    padding: 3rem;
+  }
+  footer ul {
+    list-style: none;
+  }
+  footer .contact li {
+    margin-bottom: 1rem;
+  }
+  footer a {
+    text-decoration: none;
+    color:black;
+  }
+  footer a:hover {
+    color: var(--color4);
+  }
+  footer h3 {
+    color: var(--color4);
+  }
+  footer div[class^="col"]:nth-child(2) {
+    display: flex;
+    justify-content: center;
+  }
+ 
+  .contact i {
+    color: var(--color4);
+  }
+
+  /* ---------- emlak sayfası CSS ----------*/
+  .emlak{
+    padding: 2rem;
+  }
+  .emlak .emlak_yazi{
+font-family: 'Roboto';
+font-size: 1.4rem;
+text-align: center;
+  }
+
+  .emlak .emlak_resim{
+    text-align: center;
+    
+  }
+ .emlak_gallery{
+  gap:150px;
+  padding-top: 0;
+ }
+
+  .emlak_gallery img {
+    border-radius: 1rem;
+    transition: transform 0.5s;
+    border: #ebb211;
+    border-style: solid;
+    margin-top: 2rem;
+
+  }
+  .emlak_gallery img:hover {
+    transform: scale(1.1);
+  }
+  .emlak_gallery div[class^="col"] {
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+
+  strong{
+    background-color:antiquewhite;
+  }
+
+   /* ---------- ıletişim sayfası CSS ----------*/
+ 
+   .iletisim .bize-ulasin{
+   margin-top: 3rem;
+   margin-bottom: 3rem;
+   margin-left: 3rem;
+  text-align: center;
+    display: flex;
+   width: 100%;
+    border: 5px;
+    border-style:solid ;
+    border-radius: 10px;
+    border-color: #ebb211;
+ 
+  
+    
+        
+    
+   }
+   .iletisim .iletisim-harita{
+   
+    margin-top:3rem;
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+   justify-content:baseline;
+   align-items: center;
+    border: 5px;
+    border-style:solid ;
+    border-radius: 10px;
+    border-color: #ebb211;
+   
+   }
+  
+   .iletisim{
+    display:flex ;
+    height: 1500px;
+    gap:2rem;
+    
+   }
+   .iletisim .iletisim-harita .iletisim-bilgileri{
+    padding: 2rem;
+    text-align: left;
+    font-size: 1.5rem;
+    list-style: none;
+   }
+
+   .iletisim-bilgileri i{
+    color: var(--color4);
+   }
