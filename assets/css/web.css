@@ -79,13 +79,13 @@
   }
   */
   .carousel-caption h5 {
-    font-size: 2.5rem;
+    font-size: clamp(1.2rem, 1vw + 1rem, 2.5rem);
     border-left: 1rem solid var(--color4);
     padding-left: 0.5rem;
     margin-bottom: 0;
   }
   .carousel-caption p {
-    font-size: 2rem;
+    font-size: font-size: clamp(1rem, 1vw + 1rem, 2rem);
   }
   /* WHY-US */
   .why-us {
@@ -110,7 +110,7 @@
     /* background-color: var(--color3);*/
   }
   .why-us p{
-    font-size: 1.4rem;
+    font-size: clamp(0.9rem, 1vw + 1rem, 1.4rem);
   }
   /* VIEWS */
   .views {
