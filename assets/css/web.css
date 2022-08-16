@@ -85,7 +85,7 @@
     margin-bottom: 0;
   }
   .carousel-caption p {
-    font-size: font-size: clamp(1rem, 1vw + 1rem, 2rem);
+    font-size: clamp(1rem, 1vw + 1rem, 2rem);
   }
   /* WHY-US */
   .why-us {
