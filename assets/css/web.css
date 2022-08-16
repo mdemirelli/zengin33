@@ -219,32 +219,26 @@ text-align: center;
   }
 
    /* ---------- ıletişim sayfası CSS ----------*/
- 
-   .iletisim .bize-ulasin{
-   margin-top: 3rem;
-   margin-bottom: 3rem;
-   margin-left: 3rem;
+ .iletisim > .bize-ulasin{
+   margin: 3em auto;
   text-align: center;
     display: flex;
    width: 100%;
+   min-height: 1000px;
     border: 5px;
     border-style:solid ;
     border-radius: 10px;
     border-color: #ebb211;
- 
-  
-    
-        
-    
    }
-   .iletisim .iletisim-harita{
-   
+
+   .iletisim > .iletisim-harita{
     margin-top:3rem;
     margin-bottom: 3rem;
     margin-right: 3rem;
     display:flex;
     flex-direction: column;
     width: 100%;
+    min-height: 1000px;
    justify-content:baseline;
    align-items: center;
     border: 5px;
@@ -255,8 +249,7 @@ text-align: center;
    }
   
    .iletisim{
-    display:flex ;
-    height: 1500px;
+    display:flex;
     gap:2rem;
     
    }
@@ -271,6 +264,7 @@ text-align: center;
     color: var(--color4);
    }
 
+  
    @media (max-width: 1055px) {
     .contact-info {
         flex-wrap: wrap;
@@ -283,6 +277,22 @@ text-align: center;
         flex-direction: column;
     }
     .topbar > .social-links {
+        margin-top: 1em;
+    }
+   }
+
+  @media (max-width: 900px) {
+    .iletisim {
+        flex-direction: column;
+    }
+
+    .iletisim > .bize-ulasin {
+        height: 1000px;
+        margin-bottom: 0;
+    }
+
+    .iletisim > .iletisim-harita {
+        min-height: fit-content;
         margin-top: 1em;
     }
    }
