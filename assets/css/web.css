@@ -270,3 +270,19 @@ text-align: center;
    .iletisim-bilgileri i{
     color: var(--color4);
    }
+
+   @media (max-width: 1055px) {
+    .contact-info {
+        flex-wrap: wrap;
+        
+    }
+   }
+
+   @media (max-width: 450px) {
+    .topbar {
+        flex-direction: column;
+    }
+    .topbar > .social-links {
+        margin-top: 1em;
+    }
+   }
