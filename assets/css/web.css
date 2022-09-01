@@ -3,6 +3,8 @@
     --color2: #04d5fa;
     --color3: #7c8494;
     --color4: rgb(206, 20, 101);
+    --color5:rgb(6, 75, 155);
+  
   }
   .views,
   .gallery,
@@ -24,8 +26,14 @@
     list-style: none;
   }
   .topbar i {
-    color: var(--color2);
+    color: var(--color5);
+    transition: color,transform 0.4s;
   }
+  .topbar i:hover{
+    color: var(--color4);
+    transform: scale(1.2,1.2);
+  
+    }
   .topbar .social-links i {
     font-size: 2rem;
   }
@@ -90,7 +98,7 @@
   /* WHY-US */
   .why-us {
     position: relative;
-    top: -10px;
+    top: +10px;
      z-index: 2;
     text-align: center;
     
@@ -138,6 +146,10 @@
     overflow: hidden;
     border-radius: 1rem;
   }
+  .gallery{
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
 
   /* APPOINTMENT FORM */
   .appointment-form {
@@ -150,9 +162,9 @@
   }
   /* FOOTER */
   footer {
-    margin-top: 10px;
+    margin-top: 1rem;
     background-color: var(--color1);
-    padding: 3rem;
+    padding: 0;
   }
   footer ul {
     list-style: none;
@@ -251,6 +263,7 @@ text-align: center;
    .iletisim{
     display:flex;
     gap:2rem;
+    margin-bottom: 0;
     
    }
    .iletisim .iletisim-harita .iletisim-bilgileri{
